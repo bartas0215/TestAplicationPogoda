@@ -95,13 +95,52 @@ public class ApkaPogoda {
 
         //Skrypt drugi//		
 		
-         System.out.println("Dziêkuje za udzielnie odpowiedzi ");		
-		}
+         System.out.println("Dziêkuje za udzielnie odpowiedzi\nKolejne pytanie odnosi siê do Pana/Pani optymalnej temperatury.\nProszê wybraæ jedno z poni¿szych(5,10,15,20,25)");		
 		
-}
+         Scanner plant = new Scanner(System.in);
+         int temp1 = plant.nextInt();
+	
+	    int[] temp = new int[5]; {
+	    	
+	    	temp[0]= 5;
+	    	temp[1]= 10;
+	    	temp[2]= 15;
+	    	temp[3]= 20;    
+	    	temp[4]= 25;
+	    }
+	     
+	    if (temp1==temp[0]) {
+	    	
+	    	System.out.println("Dosyæ niskie optimum temperaturowe");
+	    	for(int i=0; i<2; i++) {
+	    	    System.out.println("Ostrze¿enie o niebezpiecznej temperaturze");	
+	    	    }
+	    }
+	
+	    else if (temp1==temp[1]) {
+ 	    	
+            System.out.println("Dziêkuje za informacje");	    
+ 	    
+	    }
+	    
+	    else if (temp1==temp[2]) {
+	    	System.out.println("Dziêkuje za informacje");
+	    }
+	    
+	    
+	    else if (temp1==temp[3]) {
+	    	System.out.println("Temp. trafiona w sedno");
+	
+	}
+		
+	    else if (temp1==temp[4]) {
+	    	System.out.println("Wysokie optimum");
+	    }
+
+        }
 
 
-		
+}		
 
 		
 		
